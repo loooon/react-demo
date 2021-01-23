@@ -33,7 +33,7 @@ function Login(props) {
   var [error, setError] = useState(null);
   var [activeTabId, setActiveTabId] = useState(0);
   var [nameValue, setNameValue] = useState("");
-  var [loginValue, setLoginValue] = useState("admin@flatlogic.com");
+  var [loginValue, setLoginValue] = useState("admin@gmail.com");
   var [passwordValue, setPasswordValue] = useState("password");
 
   return (
@@ -245,7 +245,7 @@ function Login(props) {
           )}
         </div>
         <Typography color="primary" className={classes.copyright}>
-        © 2014-{new Date().getFullYear()} <a style={{ textDecoration: 'none', color: 'inherit' }} href="https://flatlogic.com" rel="noopener noreferrer" target="_blank">Flatlogic</a>, LLC. All rights reserved.
+        © 2000-{new Date().getFullYear()} <a style={{ textDecoration: 'none', color: 'inherit' }} href="https://baike.baidu.com/item/%E4%B8%8A%E6%B5%B7%E6%87%BF%E7%B4%AB%E7%BD%91%E7%BB%9C%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/20455330" rel="noopener noreferrer" target="_blank">YiZi</a>, LLC. All rights reserved.
         </Typography>
       </div>
     </Grid>

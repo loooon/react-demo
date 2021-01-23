@@ -247,15 +247,15 @@ const Header = ({ classes, isSidebarOpened, toggleSidebar, ...props }) => (
       >
         <div className={classes.profileMenuUser}>
           <Typography variant="h4" weight="medium">
-            John Smith
+            Admin
           </Typography>
           <Typography
             className={classes.profileMenuLink}
             component="a"
             color="primary"
-            href="https://flatlogic.com"
+            href="#"
           >
-            Flalogic.com
+            YiZi
           </Typography>
         </div>
         <MenuItem
