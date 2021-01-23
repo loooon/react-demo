@@ -15,7 +15,7 @@ import { Typography } from "../../components/Wrappers";
 export default function TypographyPage() {
   var classes = useStyles();
  
-  const api_url = "/tool/transfer/pdf2word"
+  const api_url = "/transfer/pdf2word"
  
   // specify upload params and url for your files
   const getUploadParams = ({ meta }) => {
