@@ -51,17 +51,17 @@ function Login(props) {
             textColor="primary"
             centered
           >
-            <Tab label="Login" classes={{ root: classes.tab }} />
-            <Tab label="New User" classes={{ root: classes.tab }} />
+            <Tab label="登录" classes={{ root: classes.tab }} />
+            <Tab label="注册" classes={{ root: classes.tab }} />
           </Tabs>
           {activeTabId === 0 && (
             <React.Fragment>
               <Typography variant="h1" className={classes.greeting}>
-                Good Morning, User
+                欢迎光临
               </Typography>
               <Button size="large" className={classes.googleButton}>
                 <img src={google} alt="google" className={classes.googleIcon} />
-                &nbsp;Sign in with Google
+                &nbsp;用谷歌账号登录
               </Button>
               <div className={classes.formDividerContainer}>
                 <div className={classes.formDivider} />
@@ -70,7 +70,7 @@ function Login(props) {
               </div>
               <Fade in={error}>
                 <Typography color="secondary" className={classes.errorMessage}>
-                  Something is wrong with your login or password :(
+                  用户名或密码不正确 :(
                 </Typography>
               </Fade>
               <TextField
@@ -125,7 +125,7 @@ function Login(props) {
                     color="primary"
                     size="large"
                   >
-                    Login
+                    登录
                   </Button>
                 )}
                 <Button
@@ -133,7 +133,7 @@ function Login(props) {
                   size="large"
                   className={classes.forgetButton}
                 >
-                  Forget Password
+                  忘记密码
                 </Button>
               </div>
             </React.Fragment>
@@ -141,14 +141,12 @@ function Login(props) {
           {activeTabId === 1 && (
             <React.Fragment>
               <Typography variant="h1" className={classes.greeting}>
-                Welcome!
+                欢迎光临
               </Typography>
-              <Typography variant="h2" className={classes.subGreeting}>
-                Create your account
-              </Typography>
+             
               <Fade in={error}>
                 <Typography color="secondary" className={classes.errorMessage}>
-                  Something is wrong with your login or password :(
+                  用户名或密码不正确 :(
                 </Typography>
               </Fade>
               <TextField
@@ -222,7 +220,7 @@ function Login(props) {
                     fullWidth
                     className={classes.createAccountButton}
                   >
-                    Create your account
+                    创建账号
                   </Button>
                 )}
               </div>
@@ -239,7 +237,7 @@ function Login(props) {
                 )}
               >
                 <img src={google} alt="google" className={classes.googleIcon} />
-                &nbsp;Sign in with Google
+                &nbsp;用谷歌账号登录
               </Button>
             </React.Fragment>
           )}
